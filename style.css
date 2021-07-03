@@ -105,6 +105,7 @@
     background: white;
     width: var(--navbarwidth);
     height: var(--navbarheight);
+    color: black;
   }
   section{
     padding-top: 80px;
