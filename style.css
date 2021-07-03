@@ -1,5 +1,4 @@
 /*Create Common variables to apply colours and sizes easiltu*/
-
 :root{
   --headerLv1TextSize:25px;
   --headerLv1TextColour: white;
@@ -52,7 +51,6 @@
   --portfolio2navbarheight: 500px;
   --portfolio2navbarwidth: 200px;
 
-
 }
 
   /*The box-sizing expression below ensures that all elements are sized intuitively, the asterisk means its applied to all elements*/
@@ -62,25 +60,25 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('images/Flower_pattern.jpg');
+    background-image: url('images//webtech_background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(255, 255, 255, 0.774);
+    background-color: rgba(255, 255, 255, 0.116);
     background-blend-mode: lighten;
     background-size: cover;
   }
   
   /* Style the header */
   header {
-    background-image:url('images/webtech_background.png');
+    background-color:rgba(255, 255, 255, 0.411);
     padding: var(--padding);
     padding-left: var(--paddingLeft);
     font-size: var(--headerLv1TextSize);
     color: var( --headerLv1TextColour);
     height:var(--headerHeight);
     width:var(--headerWidth);
-  
   }
+
   h2{
     background-color: transparent;
     padding-top: 20px;
@@ -90,7 +88,7 @@
   }
 
   h3{
-    background-color: var(--primarycolour);
+    background-color: rgba(255, 255, 255, 0.411);
     padding-top: 40px;
     text-align: center;
     font-size: var(--headerLv2TextSize);
@@ -107,7 +105,7 @@
   /* Create two columns/boxes that floats next to each other */
   nav {
     float: Right;
-    background: white;
+    background-color:rgba(255, 255, 255, 0.411);
     width: var(--navbarwidth);
     height: var(--navbarheight);
     color: black;
@@ -168,7 +166,7 @@
   
   /* Style the footer */
   footer {
-    background-color: var(--primarycolour);
+    background-color:rgba(255, 255, 255, 0.411);
     padding-top: 5px;
     text-align: center;
     width: var(--footerwidth);
@@ -208,12 +206,13 @@
   .grid-item {
     background-color: transparent;
     border: transparent;
+    padding-right: 20px;
     font-size: 30px;
     text-align: center;
   }
 
   .grid-content {
-    background-color: rgba(128, 115, 201, 0.527);
+    background-color:rgba(255, 255, 255, 0.411);
     font-size: 30px;
     text-align: center;
     width: var(--articlewidth);
@@ -254,7 +253,7 @@
   }
   
   .grid-content-portfolio1 {
-    background-color: rgba(128, 115, 201, 0.527);
+    background-color:rgba(255, 255, 255, 0.411);
     font-size: 30px;
     text-align: center;
     width: var(--portfolio1articlewidth);
@@ -295,7 +294,7 @@
   }
   
   .grid-content-portfolio2 {
-    background-color: rgba(128, 115, 201, 0.527);
+    background-color:rgba(255, 255, 255, 0.411);
     font-size: 30px;
     text-align: center;
     width: var(--portfolio2articlewidth);
