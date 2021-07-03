@@ -72,7 +72,7 @@
   
   /* Style the header */
   header {
-    background-image:url('images/webtech background.png');
+    background-image:url('images/webtech_background.png');
     padding: var(--padding);
     padding-left: var(--paddingLeft);
     font-size: var(--headerLv1TextSize);
