@@ -1,43 +1,158 @@
+/*Create Common variables to apply colours and sizes easiltu*/
+
+:root{
+  --headerLv1TextSize:25px;
+  --headerLv1TextColour: white;
+
+  --headerLv2TextSize: 20px;
+  --headerLv2TextColour: black;
+
+  --headerLv3TextSize: 30px;
+  --headerLv3TextColour: black;
+
+  --articletextsize: 20px;
+  --articletextcolour: black;
+
+  --backgroundcolour: white;
+  --primarycolour: #5A8CCF;
+  --secondarycolour: #625ACF;
+  --tertiarycolour: #5AC6CF;
+  --complementaryprimarycolour: #CF9D5A;
+  
+
+  --paddingTop: 10px;
+  --paddingLeft: 20px;
+  --paddingRight: 10px;
+  --paddingBottom: 10px;
+  --padding: 5px;
+
+  --headerHeight: 200px;
+  --headerWidth:  700px;
+
+  --subheaderHeight: 100px;
+  --subheaderWidth:  700px;
+
+  --articleheight: 500px;
+  --articlewidth: 500px;
+
+  --navbarheight: 500px;
+  --navbarwidth: 200px;
+
+  --footerheight: 120px;
+  --footerwidth: 700px;
+
+  --portfolio1articleheight: 2000px;
+  --portfolio1articlewidth: 500px;
+  --portfolio1navbarheight: 500px;
+  --portfolio1navbarwidth: 200px;
+
+
+  --portfolio2articleheight: 3000px;
+  --portfolio2articlewidth: 500px;
+  --portfolio2navbarheight: 500px;
+  --portfolio2navbarwidth: 200px;
+
+
+}
+
+  /*The box-sizing expression below ensures that all elements are sized intuitively, the asterisk means its applied to all elements*/
 * {
     box-sizing: border-box;
   }
   
   body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('images/Flower Pattern_4928x3264.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.774);
+    background-blend-mode: lighten;
+    background-size: cover;
   }
   
   /* Style the header */
   header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-  }
+    background-image:url('images/webtech background.png');
+    padding: var(--padding);
+    padding-left: var(--paddingLeft);
+    font-size: var(--headerLv1TextSize);
+    color: var( --headerLv1TextColour);
+    height:var(--headerHeight);
+    width:var(--headerWidth);
   
+  }
+  h2{
+    background-color: transparent;
+    padding-top: 20px;
+    text-align: center;
+    font-size: var(--headerLv1TextSize);
+    color: var( --headerLv1TextColour);
+  }
+
+  h3{
+    background-color: var(--primarycolour);
+    padding-top: 40px;
+    text-align: center;
+    font-size: var(--headerLv2TextSize);
+    color: var( --headerLv2TextColour);
+    height:var(--subheaderHeight);
+    width:var(--subheaderWidth);
+  }
+
   /* Create two columns/boxes that floats next to each other */
   nav {
-    float: left;
-    width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
-    padding: 20px;
+    float: Right;
+    background: white;
+    width: var(--navbarwidth);
+    height: var(--navbarheight);
   }
-  
+  section{
+    padding-top: 80px;
+  }
   /* Style the list inside the menu */
   nav ul {
-    list-style-type: none;
+    list-style-type:none;
     padding: 0;
   }
-  
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+
+  li {
+    display: block;
   }
+ /* Style the list inside the menu */
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+ /* Style the list inside the menu */
+  a:visited {
+    color: var(--secondarycolour);
+    background-color: transparent;
+    text-decoration: none;
+  }
+ /* Style the list inside the menu */
+  a:hover {
+    color: var(--complementaryprimarycolour);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+ /* Style the list inside the menu */
+  a:active {
+    color: var( --tertiarycolour);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  /* only for demonstration, should be removed */
+  article {
+    width: var(--articlewidth);
+    background-color: var(--primarycolour);
+    height: var(--articleheight); 
+    align-items: center;
   
+  }
+
   /* Clear floats after the columns */
   section::after {
     content: "";
@@ -47,16 +162,154 @@
   
   /* Style the footer */
   footer {
-    background-color: #777;
-    padding: 10px;
+    background-color: var(--primarycolour);
+    padding-top: 5px;
     text-align: center;
-    color: white;
+    width: var(--footerwidth);
+    height: var(--footerheight);
   }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     nav, article {
       width: 100%;
       height: auto;
     }
+  }
+
+  .container {
+    height: 150px;
+    position: relative;
+   
+  }
+
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .grid-container {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: 800px auto auto;
+    background-color: transparent;
+
+  }
+
+  .grid-item {
+    background-color: transparent;
+    border: transparent;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-content {
+    background-color: rgba(128, 115, 201, 0.527);
+    font-size: 30px;
+    text-align: center;
+    width: var(--articlewidth);
+    height: var(--articleheight);
+    padding-top: 50px;
+
+  }
+
+  .grid-container-homepage-content {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+
+  }
+  
+  .grid-item-homepage-content {
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    text-align: center;
+ 
+  }
+
+  .grid-container-portfolio1 {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: 800px auto auto;
+    background-color: transparent;
+
+  }
+
+  .grid-item-portfolio1 {
+    background-color: transparent;
+    border: transparent;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .grid-content-portfolio1 {
+    background-color: rgba(128, 115, 201, 0.527);
+    font-size: 30px;
+    text-align: center;
+    width: var(--portfolio1articlewidth);
+    height: var(--portfolio1articleheight);
+    padding-top: 50px;
+
+  }
+
+  .grid-containe-portfolio1-content {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+
+  }
+  
+  .grid-item-portfolio1-content {
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    text-align: center;
+ 
+  }
+
+  .grid-container-portfolio2 {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: 800px auto auto;
+    background-color: transparent;
+
+  }
+
+  .grid-item-portfolio2 {
+    background-color: transparent;
+    border: transparent;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .grid-content-portfolio2 {
+    background-color: rgba(128, 115, 201, 0.527);
+    font-size: 30px;
+    text-align: center;
+    width: var(--portfolio2articlewidth);
+    height: var(--portfolio2articleheight);
+    padding-top: 50px;
+
+  }
+
+  .grid-container-portfolio2-content {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: auto;
+    background-color: transparent;
+
+  }
+  
+  .grid-item-portfolio2-content {
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    text-align: center;
+ 
   }
