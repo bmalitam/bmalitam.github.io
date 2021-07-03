@@ -100,10 +100,8 @@
   }
   h4{
     background-color: transparent;
-
     text-align: center;
     color: var( --headerLv2TextColour);
-
   }
 
   /* Create two columns/boxes that floats next to each other */
@@ -202,7 +200,7 @@
   .grid-container {
     display: grid;
     padding-bottom: 20px;
-    grid-template-columns: 800px auto auto;
+    grid-template-columns: auto auto;
     background-color: transparent;
 
   }
@@ -243,7 +241,7 @@
   .grid-container-portfolio1 {
     display: grid;
     padding-bottom: 20px;
-    grid-template-columns: 800px auto auto;
+    grid-template-columns: auto auto;
     background-color: transparent;
 
   }
@@ -284,7 +282,7 @@
   .grid-container-portfolio2 {
     display: grid;
     padding-bottom: 20px;
-    grid-template-columns: 800px auto auto;
+    grid-template-columns:auto auto;
     background-color: transparent;
 
   }
