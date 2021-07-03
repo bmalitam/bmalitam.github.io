@@ -98,6 +98,13 @@
     height:var(--subheaderHeight);
     width:var(--subheaderWidth);
   }
+  h4{
+    background-color: transparent;
+
+    text-align: center;
+    color: var( --headerLv2TextColour);
+
+  }
 
   /* Create two columns/boxes that floats next to each other */
   nav {
