@@ -57,10 +57,10 @@
 * {
     box-sizing: border-box;
   }
-  
+  /*Style the background of the website*/
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('images//webtech_background.png');
+    background-image: url('images//webtech_background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgba(255, 255, 255, 0.116);
@@ -78,7 +78,7 @@
     height:var(--headerHeight);
     width:var(--headerWidth);
   }
-
+  /*Style h2 header*/
   h2{
     background-color: transparent;
     padding-top: 20px;
@@ -86,7 +86,7 @@
     font-size: var(--headerLv1TextSize);
     color: var( --headerLv1TextColour);
   }
-
+ /*Style h3 header*/
   h3{
     background-color: rgba(255, 255, 255, 0.411);
     padding-top: 40px;
@@ -97,6 +97,7 @@
     height:var(--subheaderHeight);
     width:var(--subheaderWidth);
   }
+   /*Style h4 header*/
   h4{
 
     background-color: rgba(255, 255, 255, 0.411);
@@ -117,6 +118,7 @@
     height: var(--navbarheight);
     color: black;
   }
+   /*Adds seperation between section with the page name and article*/
   section{
     padding-top: 80px;
   }
@@ -125,7 +127,7 @@
     list-style-type:none;
     padding: 0;
   }
-
+ /*Makes navigation bar verticle*/
   li {
     display: block;
   }
@@ -154,16 +156,6 @@
     text-decoration: underline;
   }
 
-
-  /* only for demonstration, should be removed */
-  article {
-    width: var(--articlewidth);
-    background-color: var(--primarycolour);
-    height: var(--articleheight); 
-    align-items: center;
-  
-  }
-
   /* Clear floats after the columns */
   section::after {
     content: "";
@@ -187,29 +179,31 @@
       height: auto;
     }
   }
+ /*The .class selector selects elements with a specific class attribute.*/
+ /*Below are all .class selectors*/
 
+ /*Defines Center position for div element*/
+ .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*Defines a container not used in grids for div element*/
   .container {
     height: 150px;
     position: relative;
-   
   }
-
-  .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+/*Defines a container used in grids for div element for the middle section element*/
   .grid-container {
     display: grid;
     padding-bottom: 20px;
     grid-template-columns: auto auto;
     background-color: transparent;
-
   }
-
+/*Defines a single item used in container grids for div element for the middle section element*/
   .grid-item {
     background-color: transparent;
     border: transparent;
@@ -217,57 +211,51 @@
     font-size: 30px;
     text-align: center;
   }
-
+/*Defines stylised background for middle section content in 2nd grid for homepage*/
   .grid-content {
     background-color:rgba(255, 255, 255, 0.411);
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     width: var(--articlewidth);
     height: var(--articleheight);
-    padding-top: 50px;
-
+    padding-top: 20px;
   }
-
+/*Defines a container used in grids for div element inside homepage content*/
   .grid-container-homepage-content {
     display: grid;
     padding-bottom: 20px;
     grid-template-columns: auto;
     background-color: transparent;
-
   }
-  
+  /*Defines a single item used in container grids for div element inside homepage content*/
   .grid-item-homepage-content {
     background-color: transparent;
     border: transparent;
     font-size: 20px;
     text-align: center;
- 
   }
-
+/*Defines a container used in grids for div element inside mywork content*/
   .grid-container-mywork-content {
     display: grid;
     padding-bottom: 20px;
     grid-template-columns: auto auto;
     background-color: transparent;
-
   }
-  
+  /*Defines a single item used in container grids for div element inside mywork content*/
   .grid-item-homepage-mywork-content {
     background-color: transparent;
     border: transparent;
     font-size: 10px;
     text-align: center;
- 
   }
-
+/*Defines a container used in grids for div element inside portfolio1 content*/
   .grid-container-portfolio1 {
     display: grid;
     padding-bottom: 20px;
     grid-template-columns: auto auto;
     background-color: transparent;
-
   }
-
+ /*Defines a single item used in container grids for div element inside portfolio1 content*/
   .grid-item-portfolio1 {
     background-color: transparent;
     border: transparent;
@@ -275,7 +263,7 @@
     font-size: 30px;
     text-align: center;
   }
-  
+  /*Defines stylised background for middle section content in 2nd grid for porfolio1*/
   .grid-content-portfolio1 {
     background-color:rgba(255, 255, 255, 0.411);
     font-size: 30px;
@@ -283,33 +271,29 @@
     width: var(--portfolio1articlewidth);
     height: var(--portfolio1articleheight);
     padding-top: 50px;
-
   }
-
-  .grid-containe-portfolio1-content {
+/*Defines a container used in grids for div element inside portfolio1 content*/
+  .grid-container-portfolio1-content {
     display: grid;
     padding-bottom: 20px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     background-color: transparent;
-
   }
-  
+  /*Defines a single item used in container grids for div element inside porfolio1 content*/
   .grid-item-portfolio1-content {
     background-color: transparent;
     border: transparent;
     font-size: 20px;
     text-align: center;
- 
   }
-
+/*Defines a container used in grids for div element inside portfolio1 content*/
   .grid-container-portfolio2 {
     display: grid;
     padding-bottom: 20px;
     grid-template-columns:auto auto;
     background-color: transparent;
-
   }
-
+/*Defines a single item used in container grids for div element inside portfolio2 content*/
   .grid-item-portfolio2 {
     background-color: transparent;
     border: transparent;
@@ -317,7 +301,7 @@
     font-size: 30px;
     text-align: center;
   }
-  
+   /*Defines stylised background for middle section content in 2nd grid for porfolio2*/
   .grid-content-portfolio2 {
     background-color:rgba(255, 255, 255, 0.411);
     font-size: 30px;
@@ -327,7 +311,7 @@
     padding-top: 50px;
 
   }
-
+/*Defines a container used in grids for div element inside portfolio2 content*/
   .grid-container-portfolio2-content {
     display: grid;
     padding-bottom: 20px;
@@ -335,7 +319,7 @@
     background-color: transparent;
 
   }
-  
+  /*Defines a single item used in container grids for div element inside portfolio2 content*/
   .grid-item-portfolio2-content {
     background-color: transparent;
     border: transparent;
@@ -343,13 +327,13 @@
     text-align: center;
  
   }
-
+/*defines where floating text for images showup*/
   .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
-  }
   
+  }
+  /*define style floating text for images*/
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
